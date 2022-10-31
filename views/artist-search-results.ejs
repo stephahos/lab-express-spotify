@@ -2,7 +2,9 @@
 
     <% artistsInfo.forEach(artistsInfo => { %>   
         <p> <%- artistsInfo.name %> </p>
-        <img src = <%- 'artistsInfo.images[0].url' %> />
+        <% if (artistsInfo.images.length) { %>
+<img src ="<%= artistsInfo.images[0].url %>" />
+<% } %>
         <a href="/albums/<%- artistsInfo.id %>">View Albums</a>
        <% }) %>
 </div>
