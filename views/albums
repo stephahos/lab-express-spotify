@@ -1,0 +1,4 @@
+<div class="Albums">
+    <% artistsAlbums.forEach(artistsAlbums => { %>   
+        <p> <%- artistsAlbums.name %> </p>
+</div>
